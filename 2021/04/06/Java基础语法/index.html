@@ -236,7 +236,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          undefined 字
+          1.8k 字
         
       </span>
     
@@ -247,7 +247,7 @@
         
         
         
-          NaN 分钟
+          15 分钟
         
       </span>
     
@@ -314,15 +314,15 @@
 <p>如表示float类型,则需要在字面值后加f或F</p>
 <p>如: 23.4f或23.4F</p>
 <h2 id="6-字符串"><a href="#6-字符串" class="headerlink" title="6. 字符串"></a>6. 字符串</h2><p>在Java中字符串属于对象，Java提供了String类来创建和操作字符串。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">String greeting &#x3D; &quot;Hello world!&quot;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plain">String greeting &#x3D; &quot;Hello world!&quot;;<br></code></pre></td></tr></table></figure>
 <p>注意:String 类是不可改变的，所以你一旦创建了 String 对象，那它的值就无法改变了。 如果需要对字符串做很多修改，那么应该选择使用StringBuffer&amp;StringBuilder类。</p>
 <h2 id="7-StringBuffer-和-StringBuilder-类"><a href="#7-StringBuffer-和-StringBuilder-类" class="headerlink" title="7. StringBuffer 和 StringBuilder 类"></a>7. StringBuffer 和 StringBuilder 类</h2><p>StringBuilder 类在 Java 5 中被提出，它和 StringBuffer 之间的最大不同在于 StringBuilder 的方法不是线程安全的（线程安全就是多线程访问时，采用了加锁机制，当一个线程访问该类的某个数据时，进行保护，其他线程不能进行访问直到该线程读取完，其他线程才可使用。不会出现数据不一致或者数据污染。线程不安全就是不提供数据访问保护，有可能出现多个线程先后更改数据造成所得到的数据是脏数据）。</p>
 <p>由于 StringBuilder 相较于 StringBuffer 有速度优势，所以多数情况下建议使用 StringBuilder 类。然而在应用程序要求线程安全的情况下，则必须使用 StringBuffer 类。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">StringBuffer sBuffer &#x3D; new StringBuffer(&quot; test&quot;);</span><br><span class="line">sBuffer.append(&quot; String Buffer&quot;);</span><br><span class="line">System.out.println(sBuffer);  </span><br></pre></td></tr></table></figure>
-<h2 id="8-Java-数组"><a href="#8-Java-数组" class="headerlink" title="8. Java 数组"></a>8. Java 数组</h2><h3 id="声明数组变量"><a href="#声明数组变量" class="headerlink" title="声明数组变量"></a>声明数组变量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dataType[] arrayRefVar;   &#x2F;&#x2F; 首选的方法</span><br><span class="line">或</span><br><span class="line">dataType arrayRefVar[];  &#x2F;&#x2F; 效果相同，但不是首选方法</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">StringBuffer sBuffer &#x3D; new StringBuffer(&quot; test&quot;);<br>sBuffer.append(&quot; String Buffer&quot;);<br>System.out.println(sBuffer);  <br></code></pre></td></tr></table></figure>
+<h2 id="8-Java-数组"><a href="#8-Java-数组" class="headerlink" title="8. Java 数组"></a>8. Java 数组</h2><h3 id="声明数组变量"><a href="#声明数组变量" class="headerlink" title="声明数组变量"></a>声明数组变量</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">dataType[] arrayRefVar;   &#x2F;&#x2F; 首选的方法<br>或<br>dataType arrayRefVar[];  &#x2F;&#x2F; 效果相同，但不是首选方法<br></code></pre></td></tr></table></figure>
 <p>注意: 建议使用 dataType[] arrayRefVar 的声明风格声明数组变量。 dataType arrayRefVar[] 风格是来自 C/C++ 语言 ，在Java中采用是为了让  C/C++  程序员能够快速理解 java 语言。</p>
 <h3 id="实例"><a href="#实例" class="headerlink" title="实例"></a>实例</h3><p>下面是这两种语法的代码示例：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">double[] myList;         &#x2F;&#x2F; 首选的方法</span><br><span class="line">或</span><br><span class="line">double myList[];         &#x2F;&#x2F;  效果相同，但不是首选方法</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs plain">double[] myList;         &#x2F;&#x2F; 首选的方法<br>或<br>double myList[];         &#x2F;&#x2F;  效果相同，但不是首选方法<br></code></pre></td></tr></table></figure>
 <h2 id="9-Java-方法"><a href="#9-Java-方法" class="headerlink" title="9.Java 方法"></a>9.Java 方法</h2><p>我们经常使用到System.out.println()，那么它是什么呢？</p>
 <p>println()是一个方法(Method)，而System是系统类(Class)，out是标准输出对象(Object)。这句话的用法是调用系统类System中的标准输出对象out中的方法println()。</p>
 <h3 id="那么什么是方法呢？"><a href="#那么什么是方法呢？" class="headerlink" title="那么什么是方法呢？"></a>那么什么是方法呢？</h3><p>Java方法是语句的集合，它们在一起执行一个功能。</p>
@@ -330,7 +330,7 @@
 <p>方法包含于类或对象中。</p>
 <p>方法在程序中被创建，在其他地方被引用。</p>
 <h3 id="方法的定义"><a href="#方法的定义" class="headerlink" title="方法的定义"></a>方法的定义</h3><p>一般情况下，定义一个方法包含以下语法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">修饰符 返回值类型 方法名 (参数类型 参数名)&#123;</span><br><span class="line">    ...</span><br><span class="line">    方法体</span><br><span class="line">    ...</span><br><span class="line">    return 返回值;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs plain">修饰符 返回值类型 方法名 (参数类型 参数名)&#123;<br>    ...<br>    方法体<br>    ...<br>    return 返回值;<br>&#125;<br></code></pre></td></tr></table></figure>
 
 <h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><ol>
 <li>局部变量，int n = 100如何在内存中存储？</li>
