@@ -16,24 +16,24 @@
   <meta name="author" content="Cris">
   <meta name="keywords" content="iOS Web Android">
   
-    <meta name="description" content="需求背景想要参考大众点评实现一个类似的多级菜单的功能，网上找了很久都没有找到合适的，就自己动手实现了。一开始咋看之下觉得挺简单，但细写后发现里面的东西还是挺丰富的，所以记录下类似的实现思路供兄弟们参考。 实现效果图![效果图]（https:&#x2F;&#x2F;github.com&#x2F;jniosdeveloper&#x2F;CloudImageBed&#x2F;blob&#x2F;master&#x2F;show.gif?raw&#x3D;true） 菜单设计思路1">
+    <meta name="description" content="最近在运行SwiftHub项目的时候遇到了极大的问题，现在把如何成功运行得步骤记录下来，避免让兄弟们在这个上面踩坑。SwiftHub的工程地址： 1https:&#x2F;&#x2F;github.com&#x2F;khoren93&#x2F;SwiftHub 其实，运行教程作者已经在ReadMe中写好了。不是我们常规的使用pod install的方式而是使用bundle的方式。 运行流程： 1234567891011121314151">
 <meta property="og:type" content="article">
-<meta property="og:title" content="仿大众点评多级菜单实现">
-<meta property="og:url" content="http://example.com/2022/08/23/%E5%A4%9A%E7%BA%A7%E8%81%94%E5%8A%A8%E8%8F%9C%E5%8D%95%E7%9A%84%E5%AE%9E%E7%8E%B0/index.html">
+<meta property="og:title" content="SwiftHub最新运行教程">
+<meta property="og:url" content="http://example.com/2022/09/26/SwiftHub%E6%9C%80%E6%96%B0%E8%BF%90%E8%A1%8C%E6%95%99%E7%A8%8B/index.html">
 <meta property="og:site_name" content="J的前端博客馆">
-<meta property="og:description" content="需求背景想要参考大众点评实现一个类似的多级菜单的功能，网上找了很久都没有找到合适的，就自己动手实现了。一开始咋看之下觉得挺简单，但细写后发现里面的东西还是挺丰富的，所以记录下类似的实现思路供兄弟们参考。 实现效果图![效果图]（https:&#x2F;&#x2F;github.com&#x2F;jniosdeveloper&#x2F;CloudImageBed&#x2F;blob&#x2F;master&#x2F;show.gif?raw&#x3D;true） 菜单设计思路1">
+<meta property="og:description" content="最近在运行SwiftHub项目的时候遇到了极大的问题，现在把如何成功运行得步骤记录下来，避免让兄弟们在这个上面踩坑。SwiftHub的工程地址： 1https:&#x2F;&#x2F;github.com&#x2F;khoren93&#x2F;SwiftHub 其实，运行教程作者已经在ReadMe中写好了。不是我们常规的使用pod install的方式而是使用bundle的方式。 运行流程： 1234567891011121314151">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-08-23T14:05:40.000Z">
-<meta property="article:modified_time" content="2022-08-23T14:05:44.274Z">
+<meta property="article:published_time" content="2022-09-26T12:00:01.000Z">
+<meta property="article:modified_time" content="2022-09-27T05:27:24.371Z">
 <meta property="article:author" content="Cris">
-<meta property="article:tag" content="原创">
+<meta property="article:tag" content="SwiftHub">
 <meta name="twitter:card" content="summary_large_image">
   
   
     <meta name="referrer" content="no-referrer-when-downgrade">
   
   
-  <title>仿大众点评多级菜单实现 - J的前端博客馆</title>
+  <title>SwiftHub最新运行教程 - J的前端博客馆</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -215,7 +215,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="仿大众点评多级菜单实现"></span>
+            <span id="subtitle" data-typed-text="SwiftHub最新运行教程"></span>
           
         </div>
 
@@ -226,8 +226,8 @@
     
       <span class="post-meta">
         <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-        <time datetime="2022-08-23 22:05" pubdate>
-          2022年8月23日 晚上
+        <time datetime="2022-09-26 20:00" pubdate>
+          2022年9月26日 晚上
         </time>
       </span>
     
@@ -238,7 +238,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          2.1k 字
+          802 字
         
       </span>
     
@@ -249,7 +249,7 @@
         
         
         
-          18 分钟
+          7 分钟
         
       </span>
     
@@ -295,30 +295,21 @@
         <div id="board">
           <article class="post-content mx-auto">
             <!-- SEO header -->
-            <h1 style="display: none">仿大众点评多级菜单实现</h1>
+            <h1 style="display: none">SwiftHub最新运行教程</h1>
             
             
               <div class="markdown-body">
                 
-                <h2 id="需求背景"><a href="#需求背景" class="headerlink" title="需求背景"></a>需求背景</h2><p>想要参考大众点评实现一个类似的多级菜单的功能，网上找了很久都没有找到合适的，就自己动手实现了。一开始咋看之下觉得挺简单，但细写后发现里面的东西还是挺丰富的，所以记录下类似的实现思路供兄弟们参考。</p>
-<h2 id="实现效果图"><a href="#实现效果图" class="headerlink" title="实现效果图"></a>实现效果图</h2><p>![效果图]（<a target="_blank" rel="noopener" href="https://github.com/jniosdeveloper/CloudImageBed/blob/master/show.gif?raw=true%EF%BC%89">https://github.com/jniosdeveloper/CloudImageBed/blob/master/show.gif?raw=true）</a></p>
-<h2 id="菜单设计思路"><a href="#菜单设计思路" class="headerlink" title="菜单设计思路"></a>菜单设计思路</h2><h3 id="1-处理数据源"><a href="#1-处理数据源" class="headerlink" title="1. 处理数据源"></a>1. 处理数据源</h3><p>一个比较重要的思想是不管几个列表，每一个cell都可以看成对应一个Model，整个菜单都以一个model进行设计。在这里我的整个模型设计为：</p>
-<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs objectivec"><span class="hljs-class"><span class="hljs-keyword">@interface</span> <span class="hljs-title">JNLifeTransModel</span> : <span class="hljs-title">NSObject</span></span><br><span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">strong</span>) <span class="hljs-built_in">NSString</span> *title;<br><span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">strong</span>) <span class="hljs-built_in">NSString</span> *idString;<br><span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">assign</span>) <span class="hljs-built_in">BOOL</span> selected;<br><span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">strong</span>) <span class="hljs-built_in">NSString</span> *longitude;<br><span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">strong</span>) <span class="hljs-built_in">NSString</span> *latitude;<br><span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">strong</span>) <span class="hljs-built_in">NSMutableArray</span>&lt;JNLifeTransModel *&gt; *transItems;<br><span class="hljs-keyword">@end</span><br></code></pre></td></tr></table></figure>
-<p>这样设计可以思考为，第一个列表中的每一个cell当它被选中时，都会取出其中对应的下一个列表，依次类推。在我的例子中，距离/地铁其实对应的数据源一开始不是JNLifeTransModel，但是可以通用转换把相关的数据都处理为这个菜单对应的数据源。</p>
-<h3 id="2-利用索引去进行选中和未选中的处理"><a href="#2-利用索引去进行选中和未选中的处理" class="headerlink" title="2. 利用索引去进行选中和未选中的处理"></a>2. 利用索引去进行选中和未选中的处理</h3><p>当我们处理一个列表其中某一个cell选中时，可以先遍历整个数据源将其设置为选中，然后根据点击的索引将选中的cell置为选中状态。这种处理方式针对简单列表的实现当然是可以的，但这里地铁线路包含的数据量实际上是很大的，每一条线路都对应着很多的站点，利用循环的方案去解决问题在性能上是很低的，所以我采用了另一个比较好的方案就是记录当前用户的选择，并且记录上一次用户的选择。<br>我这里有三个tableView，用户每一个列表的选中实际上都对应着一个索引，比如选择地铁1号线AAA这个选项时，其索引应该为(1,1,0)，此时如果用户选择了地铁1号线BBB，那么索引为(1,1,1)，上一个记录的索引为(1,1,0)，我们应该把当前的索引(1,1,1)置为选中，然后将上一次的(1,1,0)置为未选中，就可以完成我们的需求。<br>索引的初始化比较重要，我的需求是当用户选择距离/地铁，默认选中距离-不限，所以我的索引初始化为</p>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-attr">self.table1PreIndex</span> = <span class="hljs-number">0</span><span class="hljs-comment">;</span><br><span class="hljs-attr">self.table2PreIndex</span> = <span class="hljs-number">0</span><span class="hljs-comment">;</span><br><span class="hljs-attr">self.table3PreIndex</span> = -<span class="hljs-number">1</span><span class="hljs-comment">;</span><br><span class="hljs-attr">self.table1Index</span> = <span class="hljs-number">0</span><span class="hljs-comment">;</span><br><span class="hljs-attr">self.table2Index</span> = <span class="hljs-number">0</span><span class="hljs-comment">;</span><br><span class="hljs-attr">self.table3Index</span> = -<span class="hljs-number">1</span><span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
-<p>-1表示列表为被选中，如果需求要求为默认选中地铁1号线AAA，那么此时的初始化索引应该为</p>
-<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><code class="hljs ini"><span class="hljs-attr">self.table1PreIndex</span> = <span class="hljs-number">0</span><span class="hljs-comment">;</span><br><span class="hljs-attr">self.table2PreIndex</span> = <span class="hljs-number">0</span><span class="hljs-comment">;</span><br><span class="hljs-attr">self.table3PreIndex</span> = -<span class="hljs-number">1</span><span class="hljs-comment">;</span><br><span class="hljs-attr">self.table1Index</span> = <span class="hljs-number">1</span><span class="hljs-comment">;</span><br><span class="hljs-attr">self.table2Index</span> = <span class="hljs-number">1</span><span class="hljs-comment">;</span><br><span class="hljs-attr">self.table3Index</span> = <span class="hljs-number">0</span><span class="hljs-comment">;</span><br></code></pre></td></tr></table></figure>
-<h3 id="3-关于列表选中的处理"><a href="#3-关于列表选中的处理" class="headerlink" title="3. 关于列表选中的处理"></a>3. 关于列表选中的处理</h3><p>关于某一个列表选中某一个cell时，此时有一个比较重要的点在于对列表的刷新判断。当我选择距离/地铁-地铁这个选项时，实际上我需要刷新三个列表。当我选择距离/地铁-地铁-1号线时，实际上我需要刷新第二和第三个列表，当我选择距离/地铁-地铁-1号线-AAA时，实际上我只需刷新第三个列表。以为子列表的选中不会影响上级列表的变化，所以并不需要每一个列表都进行刷新。</p>
-<h3 id="4-关于回显的处理"><a href="#4-关于回显的处理" class="headerlink" title="4. 关于回显的处理"></a>4. 关于回显的处理</h3><p>关于回显的处理，需要注意的是，回显的时候不需要用到前一个选中的索引，只需要用户最后确认时的索引即可。<br>另一个可能引起很多问题的地方是，一定要注意对于重置选中cell的触发条件，在我的需求中，有几种情况会触发重置cell，分别是：选中第三个列表、触摸背景区域让菜单栏消失、点击全部类型按钮、点击距离/地铁按钮，这四种情况都要重置用户上一个选中时的索引，这对于处理回显有很大的影响，其中只有用户选择具体距离（比如1KM）或选择地铁-不限或某一个地铁站时，我才应该记录当前用户的选项，否则类似于点击背景区域让菜单栏消失，不应该再去记录当前用户的选择，用户的选择应该还是停留在之前的选中状态。</p>
-<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>综上所述，我对于多级菜单的实现思路就可以分为下面几步：</p>
-<ol>
-<li>数据源的处理</li>
-<li>定义各列表选中和未选中的索引</li>
-<li>选中某列表中的某个cell的处理</li>
-<li>回显和影响重置前一个选中状态的条件处理</li>
-</ol>
-<h2 id="Demo地址"><a href="#Demo地址" class="headerlink" title="Demo地址"></a>Demo地址</h2><p><a target="_blank" rel="noopener" href="https://github.com/jniosdeveloper/DzdpMultiLevelMenuDemo">https://github.com/jniosdeveloper/DzdpMultiLevelMenuDemo</a></p>
+                <p>最近在运行SwiftHub项目的时候遇到了极大的问题，现在把如何成功运行得步骤记录下来，避免让兄弟们在这个上面踩坑。<br>SwiftHub的工程地址：</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">https:<span class="hljs-regexp">//gi</span>thub.com<span class="hljs-regexp">/khoren93/</span>SwiftHub<br></code></pre></td></tr></table></figure>
+<p>其实，运行教程作者已经在ReadMe中写好了。不是我们常规的使用pod install的方式而是使用bundle的方式。</p>
+<p>运行流程：</p>
+<figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">准备工作<br><span class="hljs-number">1</span>.安装Xcode命令行工具(这一步安装了Xcode基本都可以省略)<br>xcode-select --install <br><br><span class="hljs-number">2</span>.安装Bundler 用来管理ruby镜像依赖<br>[sudo] gem install bundler<br><br><span class="hljs-number">3</span>.安装brew进行包管理<br>/usr/bin/ruby -e <span class="hljs-string">&quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</span><br><br><span class="hljs-number">4</span>.利用brew安装<span class="hljs-keyword">node</span><span class="hljs-title"></span><br><span class="hljs-title">brew</span> install <span class="hljs-keyword">node</span><span class="hljs-title"></span><br><span class="hljs-title"></span><br><span class="hljs-title">实际上，如果你的电脑中安装了上述的工具则可以跳过。</span><br><span class="hljs-title"></span><br><span class="hljs-title">运行项目步骤</span><br><span class="hljs-title">1</span>. cd SwiftHub<br><span class="hljs-number">2</span>. bundle install<br><span class="hljs-number">3</span>. bundle exec fastlane setup<br><span class="hljs-number">4</span>. bundle exec fastlane update<br><br></code></pre></td></tr></table></figure>
+<p>运行得时候需要利用“梯子”使用终端代理命令后再执行。执行第二句的时候会比较花费时间，个人等了大概5分钟。且执行过程中或许会报某些库下载失败，此时需要利用额外的命令行语句进行相关库的下载，比如个人遇到了json这个库下载失败，则执行</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">sudo</span> gem install json -v &#x27;<span class="hljs-number">2</span>.<span class="hljs-number">6</span>.<span class="hljs-number">2</span>&#x27;<br></code></pre></td></tr></table></figure>
+<p>按照错误提示安装对应版本的库。</p>
+<p>最后在运行程序的过程中，如果一开始链接真机发现编译始终没有完成可以先试用模拟器程序跑，启动后再运行真机。</p>
+<p>安装上述步骤，是可以成功运行的。</p>
 
                 
               </div>
@@ -352,7 +343,7 @@
     <div class="post-meta">
       <i class="iconfont icon-tags"></i>
       
-        <a href="/tags/%E5%8E%9F%E5%88%9B/">#原创</a>
+        <a href="/tags/SwiftHub/">#SwiftHub</a>
       
     </div>
   
@@ -364,8 +355,8 @@
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>仿大众点评多级菜单实现</div>
-      <div>http://example.com/2022/08/23/多级联动菜单的实现/</div>
+      <div>SwiftHub最新运行教程</div>
+      <div>http://example.com/2022/09/26/SwiftHub最新运行教程/</div>
     </div>
     <div class="license-meta">
       
@@ -377,7 +368,7 @@
       
         <div class="license-meta-item license-meta-date">
           <div>发布于</div>
-          <div>2022年8月23日</div>
+          <div>2022年9月26日</div>
         </div>
       
       
@@ -407,18 +398,12 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2022/09/26/SwiftHub%E6%9C%80%E6%96%B0%E8%BF%90%E8%A1%8C%E6%95%99%E7%A8%8B/" title="SwiftHub最新运行教程">
-                        <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">SwiftHub最新运行教程</span>
-                        <span class="visible-mobile">上一篇</span>
-                      </a>
-                    
                   </article>
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2021/04/06/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" title="Hexo个人网站搭建">
-                        <span class="hidden-mobile">Hexo个人网站搭建</span>
+                      <a href="/2022/08/23/%E5%A4%9A%E7%BA%A7%E8%81%94%E5%8A%A8%E8%8F%9C%E5%8D%95%E7%9A%84%E5%AE%9E%E7%8E%B0/" title="仿大众点评多级菜单实现">
+                        <span class="hidden-mobile">仿大众点评多级菜单实现</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>

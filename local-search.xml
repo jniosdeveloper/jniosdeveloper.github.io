@@ -4,6 +4,31 @@
   
   
   <entry>
+    <title>SwiftHub最新运行教程</title>
+    <link href="/2022/09/26/SwiftHub%E6%9C%80%E6%96%B0%E8%BF%90%E8%A1%8C%E6%95%99%E7%A8%8B/"/>
+    <url>/2022/09/26/SwiftHub%E6%9C%80%E6%96%B0%E8%BF%90%E8%A1%8C%E6%95%99%E7%A8%8B/</url>
+    
+    <content type="html"><![CDATA[<p>最近在运行SwiftHub项目的时候遇到了极大的问题，现在把如何成功运行得步骤记录下来，避免让兄弟们在这个上面踩坑。<br>SwiftHub的工程地址：</p><figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs awk">https:<span class="hljs-regexp">//gi</span>thub.com<span class="hljs-regexp">/khoren93/</span>SwiftHub<br></code></pre></td></tr></table></figure><p>其实，运行教程作者已经在ReadMe中写好了。不是我们常规的使用pod install的方式而是使用bundle的方式。</p><p>运行流程：</p><figure class="highlight crmsh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><code class="hljs crmsh">准备工作<br><span class="hljs-number">1</span>.安装Xcode命令行工具(这一步安装了Xcode基本都可以省略)<br>xcode-select --install <br><br><span class="hljs-number">2</span>.安装Bundler 用来管理ruby镜像依赖<br>[sudo] gem install bundler<br><br><span class="hljs-number">3</span>.安装brew进行包管理<br>/usr/bin/ruby -e <span class="hljs-string">&quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;</span><br><br><span class="hljs-number">4</span>.利用brew安装<span class="hljs-keyword">node</span><span class="hljs-title"></span><br><span class="hljs-title">brew</span> install <span class="hljs-keyword">node</span><span class="hljs-title"></span><br><span class="hljs-title"></span><br><span class="hljs-title">实际上，如果你的电脑中安装了上述的工具则可以跳过。</span><br><span class="hljs-title"></span><br><span class="hljs-title">运行项目步骤</span><br><span class="hljs-title">1</span>. cd SwiftHub<br><span class="hljs-number">2</span>. bundle install<br><span class="hljs-number">3</span>. bundle exec fastlane setup<br><span class="hljs-number">4</span>. bundle exec fastlane update<br><br></code></pre></td></tr></table></figure><p>运行得时候需要利用“梯子”使用终端代理命令后再执行。执行第二句的时候会比较花费时间，个人等了大概5分钟。且执行过程中或许会报某些库下载失败，此时需要利用额外的命令行语句进行相关库的下载，比如个人遇到了json这个库下载失败，则执行</p><figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs apache"><span class="hljs-attribute">sudo</span> gem install json -v &#x27;<span class="hljs-number">2</span>.<span class="hljs-number">6</span>.<span class="hljs-number">2</span>&#x27;<br></code></pre></td></tr></table></figure><p>按照错误提示安装对应版本的库。</p><p>最后在运行程序的过程中，如果一开始链接真机发现编译始终没有完成可以先试用模拟器程序跑，启动后再运行真机。</p><p>安装上述步骤，是可以成功运行的。</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>iOS</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>SwiftHub</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>仿大众点评多级菜单实现</title>
     <link href="/2022/08/23/%E5%A4%9A%E7%BA%A7%E8%81%94%E5%8A%A8%E8%8F%9C%E5%8D%95%E7%9A%84%E5%AE%9E%E7%8E%B0/"/>
     <url>/2022/08/23/%E5%A4%9A%E7%BA%A7%E8%81%94%E5%8A%A8%E8%8F%9C%E5%8D%95%E7%9A%84%E5%AE%9E%E7%8E%B0/</url>
